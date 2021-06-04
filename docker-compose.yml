@@ -1,0 +1,9 @@
+services:
+  andromeda:
+    container_name: mothallah
+    ports: 
+      - 60004:80
+    volumes: 
+      - ~/Desktop/docker/universe/triangulum/upload/:/proj/upload/
+      - ~/Desktop/docker/universe/mothallah/default.conf:/etc/nginx/conf.d/default.conf
+    image: nginx
